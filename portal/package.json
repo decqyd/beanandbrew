@@ -1,0 +1,25 @@
+{
+  "name": "portal",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.8.3",
+    "geist": "^1.0.0",
+    "solid-js": "^1.7.8"
+  },
+  "devDependencies": {
+    "@unocss/preset-web-fonts": "^0.57.1",
+    "@unocss/preset-wind": "^0.57.1",
+    "@unocss/transformer-variant-group": "^0.57.1",
+    "typescript": "^5.0.2",
+    "unocss": "^0.57.1",
+    "vite": "^4.4.5",
+    "vite-plugin-solid": "^2.7.0"
+  }
+}
