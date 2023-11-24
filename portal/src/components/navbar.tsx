@@ -33,7 +33,7 @@ export default function Navbar(props: NavbarProps) {
                 <For each={navItems} fallback={<p>loading...</p>}>
                     {(item) => (
                         <A activeClass="underline" class={`hover:text-gray-300 transition-all  text-white py-3 px-4 no-underline 
-                        ${item.link === "/" ? "text-1.75rem" : "text-1.5rem"}`}
+                        ${item.link === "/" ? "text-[1.75rem]" : "text-[1.5rem]"}`}
                             href={item.link}>
                                 {item.label}
                         </A>

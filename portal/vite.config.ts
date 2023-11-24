@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
-import solid from 'vite-plugin-solid' 
-import UnoCSS from "unocss/vite"
+import solid from 'vite-plugin-solid'
 
 export default defineConfig({
-  plugins: [solid(), UnoCSS()],
+  plugins: [solid()],
   server: {
     port: 3000
   }

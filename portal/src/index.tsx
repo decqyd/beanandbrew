@@ -1,10 +1,9 @@
 /* @refresh reload */
 import { render } from 'solid-js/web'
-import "virtual:uno.css"
 import { Router, Routes, Route } from '@solidjs/router'
 import { lazy } from 'solid-js'
 import Navbar from './components/navbar'
-
+import "./index.css"
 import App from './App'
 
 const root = document.getElementById('root')
