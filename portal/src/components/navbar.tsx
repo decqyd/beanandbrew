@@ -29,10 +29,11 @@ export default function Navbar(props: NavbarProps) {
 
     return (
         <div {...props}>
-            <div class="flex gap-x-7">
+            <div class="flex">
                 <For each={navItems} fallback={<p>loading...</p>}>
-                    {(item) => (
-                        <A activeClass="underline" class={`hover:text-gray-300 transition-all  text-white py-3 px-4 no-underline 
+                    {(item: NavbarItem) => (
+                        <A activeClass="underline" class={`hover:text-gray-300 transition-all text-white py-3 px-4 
+                        underline-offset-2
                         ${item.link === "/" ? "text-[1.75rem]" : "text-[1.5rem]"}`}
                             href={item.link}>
                                 {item.label}
