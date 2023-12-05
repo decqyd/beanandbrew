@@ -2,8 +2,11 @@ function App() {
   return (
     <div>
       <div class="text-center flex w-full h-screen justify-center align-middle items-center rounded-b-md bg-[url(/herobg.jpg)]">
-        <div class="font-playfair select-none my-0 w-[20rem] font-normal leading-[7rem] h-max flex justify-center items-center md:text-[6rem] text-white text-[5rem]">
+        {/* <div class="font-playfair selection:text-black selection:bg-white my-0 w-[20rem] font-normal leading-[7rem] h-max flex justify-center items-center md:text-[6rem] text-white text-[5rem]">
           BEAN AND BREW
+        </div> */}
+        <div>
+          <img src="/logo.png" alt="bean and brew logo"/>
         </div>
       </div>
       <div class="font-playfair mt-10 w-full overflow-y-hidden py-5 h-full">

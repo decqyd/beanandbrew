@@ -14,7 +14,7 @@ interface NavbarProps {
 export default function Navbar(props: NavbarProps) {
     const navItems: NavbarItem[] = [
         {
-            label: <FiCoffee/> as Element,
+            label: <img class="w-14 h-10" src="/navbarlogo.png" alt="bean and brew logo"/> as Element,
             link: "/"
         },
         {
@@ -32,9 +32,9 @@ export default function Navbar(props: NavbarProps) {
             <div class="flex">
                 <For each={navItems} fallback={<p>loading...</p>}>
                     {(item: NavbarItem) => (
-                        <A activeClass="underline" class={`hover:text-gray-300 transition-all text-white py-3 px-4 
+                        <A activeClass="underline" class={`text-gray-300 transition-all flex items-center hover:text-white py-2 px-3
                         underline-offset-2
-                        ${item.link === "/" ? "text-[1.75rem]" : "text-[1.5rem]"}`}
+                        ${item.link === "/" ? "text-[1.5rem]" : "text-[1.25rem]"}`}
                             href={item.link}>
                                 {item.label}
                         </A>

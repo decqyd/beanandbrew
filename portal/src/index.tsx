@@ -11,11 +11,18 @@ const root = document.getElementById('root')
 
 render(() => (  
         <Router>
-            <Navbar class="mx-4 my-2 fixed top-0 bg-black rounded-md px-2 opacity-[75%]"/>
-            <Routes>
-                <Route path="/" component={App} />
-                <Route path="/coffee" component={lazy(() => import("./routes/coffee"))}/>
-            </Routes>
-            <Footer />
+            <div class="flex flex-col h-screen justify-between">
+                <Navbar class="mx-5 my-3 fixed top-0 z-10 bg-black rounded-md px-2 opacity-75 transition-all hover:opacity-100"/>
+                <div class='mb-auto'>
+                    <Routes>
+                        <Route path="/" component={App} />
+                        <Route path="/coffee" component={lazy(() => import("./routes/coffee"))}/>
+
+                        {/* wildcard route to match anything that isnt defined here */}
+                        <Route path="/*" component={lazy(() => import("./routes/404"))}/>
+                    </Routes>
+                </div>
+                <Footer />
+            </div>
         </Router>
 ), root!)
