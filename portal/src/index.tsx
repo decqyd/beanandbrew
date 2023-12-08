@@ -12,7 +12,9 @@ const root = document.getElementById('root')
 render(() => (  
         <Router>
             <div class="flex flex-col h-screen justify-between">
-                <Navbar class="mx-5 my-3 fixed top-0 z-10 bg-black rounded-md px-2 opacity-75 transition-all hover:opacity-100"/>
+                {/* global site navbar */}
+                <Navbar class="mx-5 my-3 fixed top-0 z-10 bg-black bg-opacity-50 rounded-md px-2 transition-all hover:bg-opacity-75"/>
+                {/* div used to space footer accordingly */}
                 <div class='mb-auto'>
                     <Routes>
                         <Route path="/" component={App} />
@@ -22,6 +24,7 @@ render(() => (
                         <Route path="/*" component={lazy(() => import("./routes/404"))}/>
                     </Routes>
                 </div>
+                {/* global site footer */}
                 <Footer />
             </div>
         </Router>
