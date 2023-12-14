@@ -1,6 +1,7 @@
 export default function Coffee() {
     return (
         <div>
+            {/* title bar */}
             <h1 class="text-white font-playfair w-full bg-[url(/ourcoffee.jpg)] flex justify-center py-16 text-6xl font-bold">
                 OUR COFFEES
             </h1>
