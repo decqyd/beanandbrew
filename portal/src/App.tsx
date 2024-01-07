@@ -1,3 +1,5 @@
+import { Link } from "@solidjs/router"
+
 function App() {
   return (
     <div>
@@ -9,36 +11,44 @@ function App() {
       </div>
       {/* content under hero */}
       <div class="font-playfair place-items-center place-content-center md:place-items-start 
-      md:place-content-start flex flex-col mt-10 w-screen md:text-left text-center overflow-y-hidden h-full">
+      md:place-content-start flex flex-col overflow-x-hidden mt-10 w-screen md:text-left text-center overflow-y-hidden h-full">
         <div class="flex justify-center w-screen mb-10 overflow-x-hidden gap-x-40 lg:flex-row flex-col mx-5">
-            <div class="mt-5">
-              <h1 class="text-6xl font-bold">
-                WHO WE ARE
-              </h1>
-              <p class="md:text-3xl text-2xl md:w-[43rem] w-[25rem] pt-5">
-                We are a small coffee company based around Harrogate and Leeds, and we pride ourselves on our use of fair-trade coffee and organic milk.
-                <br />
-                <br />
-                Each drink we craft is made exactly how you want it, no matter how complicated.
-                <br />
-                <br />
-                {/* related fairtrade and organic logos */}
-                <span class="flex justify-center md:justify-start pb-10 gap-x-10">
-                  <img src="/fairtrade.jpg" alt="fairtrade logo" class="md:w-[8rem] w-[5rem] h-max" />
-                  <img src="/organic.jpg" alt="organic logo" class="md:w-[8rem] w-[5rem] h-max" />
-                </span>
-              </p>
-            </div>
-            {/* barista stock image */}
-            <img src="/barista.png" alt="barista" class="rounded-md w-[400px] h-[600px]" />
+          <div class="mt-5">
+            <h1 class="text-5xl font-bold">
+              WHO WE ARE
+            </h1>
+            <p class="md:text-2xl text-xl md:w-[43rem] w-[25rem] pt-5">
+              We are a small coffee company based around Harrogate and Leeds, and we pride ourselves on our use of fair-trade coffee and organic milk.
+              <br />
+              <br />
+              Each drink we craft is made exactly how you want it, no matter how complicated.
+              <br />
+              <br />
+              {/* related fairtrade and organic logos */}
+              <span class="flex justify-center md:justify-start pb-10 gap-x-10">
+                <img src="/fairtrade.jpg" alt="fairtrade logo" class="md:w-[6rem] w-[4rem] h-max" />
+                <img src="/organic.jpg" alt="organic logo" class="md:w-[6rem] w-[4rem] h-max" />
+              </span>
+            </p>
           </div>
-          <div class="flex mt-2 place-content-center place-items-center w-screen mb-10 overflow-x-hidden gap-x-40 lg:flex-col text-center mx-5">
-              <h1 class="text-6xl font-bold">
-                WHAT WE DO
-              </h1>
-              <p class="md:text-3xl text-2xl md:w-[43rem] w-[25rem] pt-5">
-                We provide our customers with the best coffees and bakery goods that we have to offer.
-              </p>
+          {/* barista stock image */}
+          <img src="/barista.png" alt="barista" class="rounded-md w-[400px] h-[600px]" />
+        </div>
+        <div class="flex mt-2 place-content-center  place-items-center w-screen mb-10 overflow-x-hidden gap-x-40 lg:flex-col text-center mx-5">
+            <h1 class="text-6xl font-bold">
+              WHAT WE DO
+            </h1>
+            <p class="md:text-3xl text-2xl md:w-[43rem] w-[25rem] pt-5">
+              We provide our customers with the best coffees and bakery goods that we have to offer.
+              <br/>
+              <span class="font-bold">Every time.</span>
+            </p>
+            <img src="/coffeeshop.jpg" class="mt-5 rounded-md w-[35%] h-max"/>
+          <Link href="/coffee" class="border text-3xl border-black bg-black text-white transition-all
+          hover:bg-white hover:text-black duration-200
+          px-7 py-2 mt-10 rounded-3xl">
+            Browse our coffees
+          </Link>
         </div>
       </div>
     </div>

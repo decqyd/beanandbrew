@@ -9,13 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@felte/reporter-solid": "^1.2.9",
+    "@felte/solid": "^1.2.11",
+    "@felte/validator-zod": "^1.0.17",
+    "@hope-ui/solid": "^0.6.7",
     "@solid-primitives/intersection-observer": "^2.1.3",
     "@solidjs/router": "^0.9.1",
+    "@stitches/core": "^1.2.8",
     "geist": "^1.0.0",
     "jotai": "^2.5.1",
     "solid-icons": "^1.1.0",
     "solid-jotai": "^0.2.2",
-    "solid-js": "^1.7.8"
+    "solid-js": "^1.7.8",
+    "solid-transition-group": "^0.2.3",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
